@@ -12,15 +12,13 @@
     "bin": [
         "FanControl.exe",
         "PerformanceOverlay.exe",
-        "PowerControl.exe",
-        //"SteamController.exe"
+        "PowerControl.exe"
     ],
     "shortcuts": [
         [
             "FanControl.exe",
             "PerformanceOverlay.exe",
-            "PowerControl.exe",
-            //"SteamController.exe"
+            "PowerControl.exe"
         ]
     ],
     "checkver": "github",
