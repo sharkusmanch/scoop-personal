@@ -13,14 +13,14 @@
         "FanControl.exe",
         "PerformanceOverlay.exe",
         "PowerControl.exe",
-        "SteamController.exe"
+        //"SteamController.exe"
     ],
     "shortcuts": [
         [
             "FanControl.exe",
             "PerformanceOverlay.exe",
             "PowerControl.exe",
-            "SteamController.exe"
+            //"SteamController.exe"
         ]
     ],
     "checkver": "github",
