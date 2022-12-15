@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ayufan/steam-deck-tools/releases/download/$version/SteamDeckTools-$version.zip"
+                "url": "https://github.com/ayufan/steam-deck-tools/releases/download/$version/SteamDeckTools-$version-portable.zip"
             }
         }
     }
