@@ -23,6 +23,12 @@
             "SteamController.exe"
         ]
     ],
+    "persist": [
+            "FanControl.dll.ini",
+            "PerformanceOverlay.dll.ini",
+            "PowerControl.dll.ini",
+            "SteamController.dll.ini"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
