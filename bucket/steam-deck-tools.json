@@ -1,12 +1,12 @@
 {
-    "version": "0.5.43",
+    "version": "0.5.47",
     "description": "Steam Deck Fan, Overlay and Power Control for Windows ",
     "homepage": "https://github.com/ayufan/steam-deck-tools",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ayufan/steam-deck-tools/releases/download/0.5.43/SteamDeckTools-0.5.43-portable.zip",
-            "hash": "fb90cddd36b9d8cc346f01cfa31d954280f9a6336edb02e817af3a2ca620beb1"
+            "url": "https://github.com/ayufan/steam-deck-tools/releases/download/0.5.47/SteamDeckTools-0.5.47-portable.zip",
+            "hash": "0e7ed008f7f1bf0a52f4bb4e2b22b9d1246183d58650244c2ee95ad41f42634c"
         }
     },
     "bin": [
@@ -24,10 +24,10 @@
         ]
     ],
     "persist": [
-            "FanControl.dll.ini",
-            "PerformanceOverlay.dll.ini",
-            "PowerControl.dll.ini",
-            "SteamController.dll.ini"
+        "FanControl.dll.ini",
+        "PerformanceOverlay.dll.ini",
+        "PowerControl.dll.ini",
+        "SteamController.dll.ini"
     ],
     "checkver": "github",
     "autoupdate": {
