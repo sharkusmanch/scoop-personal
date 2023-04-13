@@ -5,7 +5,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com//unknownskl/xbox-xcloud-client/releases/download/v2.0.0-beta7/Greenlight-2.0.0-beta7-win.zip",
-            "hash": "fffa9edbf9d9b2b451e7bfe8ad6c0332211c101a7f3c7fc30a8db070293a75c8"
+            "hash": "b92489bc74c32e5d37036d86b38ffc00d1452edc8e88280c9026181a3bd18c4a"
         }
     },
     "pre_uninstall": [
