@@ -1,12 +1,12 @@
 {
-    "version": "0.6.16",
+    "version": "0.6.17",
     "description": "Steam Deck Fan, Overlay and Power Control for Windows ",
     "homepage": "https://github.com/ayufan/steam-deck-tools",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ayufan/steam-deck-tools/releases/download/0.6.16/SteamDeckTools-0.6.16-portable.zip",
-            "hash": "2bac1ce39a20114f0fe554f94936680a3791db8989a5ecf0a0665d58bc83836a"
+            "url": "https://github.com/ayufan/steam-deck-tools/releases/download/0.6.17/SteamDeckTools-0.6.17-portable.zip",
+            "hash": "23354f8d4629eb98899b65c7a0eee07648fec9da785987eb823a40f244757a19"
         }
     },
     "bin": [
