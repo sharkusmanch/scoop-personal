@@ -4,8 +4,8 @@
     "homepage": "https://github.com//unknownskl/xbox-xcloud-client",
     "architecture": {
         "64bit": {
-            "url": "https://github.com//unknownskl/xbox-xcloud-client/releases/download/v2.0.0-beta8/Greenlight-2.0.0-beta8-win.zip",
-            "hash": "39097c58845e973c85638c490932aea4f032884d54b2ed9607c43b4a2c9dd3f4"
+            "url": "https://github.com//unknownskl/xbox-xcloud-client/releases/download/v2.0.0-beta9/Greenlight-2.0.0-beta9-win.zip",
+            "hash": "bd082dab6847e81ae4b0cf83fae1a7bbfa4958eeaa0e1994050beeca321a8a1b"
         }
     },
     "pre_uninstall": [
