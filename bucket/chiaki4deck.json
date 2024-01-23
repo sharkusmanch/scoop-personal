@@ -8,9 +8,10 @@
             "hash": "0902be3fbd4b11174872f9c1fc07186c9135a8bcccb61602134cd8acccce1406"
         }
     },
+    "pre_install": "Expand-7zipArchive \"$dir\\Chiaki4deck-Win.zip\" $dir -Removal",
     "shortcuts": [
         [
-            "chiaki.exe",
+            "Chiaki4deck-Win\\chiaki.exe",
             "Chiaki"
         ]
     ],
