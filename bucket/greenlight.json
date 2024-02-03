@@ -2,6 +2,7 @@
     "version": "2.0.1",
     "description": "An open-source client for Xbox home streaming made in Javascript and Typescript",
     "homepage": "https://github.com//unknownskl/xbox-xcloud-client",
+    "license": "mit",
     "architecture": {
         "64bit": {
             "url": "https://github.com/unknownskl/greenlight/releases/download/v2.0.1/Greenlight-2.0.1-win.zip",
