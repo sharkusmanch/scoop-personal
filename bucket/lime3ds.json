@@ -1,11 +1,11 @@
 {
-    "version": "2113",
+    "version": "2114",
     "description": "A Nintendo 3DS emulator based on Citra",
     "homepage": "https://github.com/Lime3DS/Lime3DS/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lime3DS/Lime3DS//releases/download/2113/lime3ds-2113-windows-msvc.zip",
-            "hash": "69a29b184c90691bc22ef4c9b104cf103d4843510a845731e46b7da96695df58"
+            "url": "https://github.com/Lime3DS/Lime3DS//releases/download/2114/lime3ds-2114-windows-msvc.zip",
+            "hash": "e7a1495c96b13848537675401515848c393b78d4a2505c7bcea7d0c6ed617393"
         }
     },
     "pre_install": [
