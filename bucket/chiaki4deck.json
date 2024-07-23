@@ -1,11 +1,11 @@
 {
-    "version": "1.7.3",
+    "version": "1.7.4",
     "description": "Fork of Chiaki (Open Source Playstation Remote Play) with Enhancements for Steam Deck",
     "homepage": "https://github.com/streetpea/chiaki4deck",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/streetpea/chiaki4deck/releases/download/v1.7.3/Chiaki4deck-win_x64-MSYS2-Release.zip",
-            "hash": "8223e63f8519944730ebed5513e1c39b5c36a243faf3a719a38f5f8a432f9f1c"
+            "url": "https://github.com/streetpea/chiaki4deck/releases/download/v1.7.4/Chiaki4deck-win_x64-MSYS2-Release.zip",
+            "hash": "0b83a835e7b7aa1cbb8a91282cf2b620ede42a3f7689e607fb8f76300c00d254"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\Chiaki4deck-Win.zip\" $dir -Removal",
