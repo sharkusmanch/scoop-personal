@@ -19,7 +19,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/streetpea/chiaki4deck/releases/download/v$version/Chiaki4deck-win_x64-MSYS2-Release.zip"
+                "url": "https://github.com/streetpea/chiaki-ng/releases/download/v$version/chiaki-ng-win_x64-VC-portable-$version.zip"
             }
         }
     }
