@@ -19,7 +19,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v$version/DLSS.Swapper-$majorVersion.$minorVersion.$patchVersion.$buildVersion-portable.zip"
+                "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v$version/DLSS.Swapper-$version-portable.zip"
             }
         }
     }
