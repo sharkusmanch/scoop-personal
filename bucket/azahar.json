@@ -1,0 +1,30 @@
+{
+    "version": "2120-rc1",
+    "description": "An open-source 3DS emulator project based on Citra.",
+    "homepage": "https://github.com/azahar-emu/azahar/",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/azahar-emu/azahar/releases/download/2120-rc1/azahar-2120-rc1-windows-msvc.zip",
+            "hash": "10e9b24c87ff4ac8549eb8d214a6dac14b46f59e37faf8ba42a032da5f480af2"
+        }
+    },
+    "pre_install": [
+        "mv $dir/azahar-$version-windows-msvc/* $dir",
+        "rmdir $dir/azahar-$version-windows-msvc"
+    ],
+    "shortcuts": [
+        [
+            "azahar.exe",
+            "Azahar"
+        ]
+    ],
+    "persist": "qt.conf",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/azahar-emu/azahar/releases/download/$version/lime3ds-$version-windows-msvc.zip"
+            }
+        }
+    }
+}
