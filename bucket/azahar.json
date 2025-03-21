@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/azahar-emu/azahar/releases/download/$version/lime3ds-$version-windows-msvc.zip"
+                "url": "https://github.com/azahar-emu/azahar/releases/download/$version/azahar-$version-windows-msvc.zip"
             }
         }
     }
