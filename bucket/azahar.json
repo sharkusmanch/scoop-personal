@@ -1,11 +1,11 @@
 {
-    "version": "2120-rc1",
+    "version": "2120",
     "description": "An open-source 3DS emulator project based on Citra.",
     "homepage": "https://github.com/azahar-emu/azahar/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/azahar-emu/azahar/releases/download/2120-rc1/azahar-2120-rc1-windows-msvc.zip",
-            "hash": "10e9b24c87ff4ac8549eb8d214a6dac14b46f59e37faf8ba42a032da5f480af2"
+            "url": "https://github.com/azahar-emu/azahar/releases/download/2120/azahar-2120-windows-msvc.zip",
+            "hash": "013ea3a389acc0731386db3c28558869a219941626a00536bbe0767578ffe166"
         }
     },
     "pre_install": [
