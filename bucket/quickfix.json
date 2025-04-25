@@ -1,10 +1,10 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "QuickFix CLI tool to manage Lyall's game mods for PC.",
     "homepage": "https://github.com/sharkusmanch/quickfix",
-    "url": "https://github.com/sharkusmanch/quickfix/releases/download/v1.0.1/quickfix.exe",
+    "url": "https://github.com/sharkusmanch/quickfix/releases/download/v1.0.2/quickfix.exe",
     "bin": "quickfix.exe",
-    "hash": "dc595b25d126e3eee88cf4db71f91e403050b5fbcae0b756153c195a2bea594c",
+    "hash": "91c6ce31112fb447bb0fb779be17fd6a1972ffd662d3b80d9fdd18903e62cd43",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/sharkusmanch/quickfix/releases/download/v$version/quickfix.exe"
