@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "description": "Apollo Profile Manager - Manage and swap game configuration files and save data between Apollo clients.",
+  "homepage": "https://github.com/ClassicOldSong/ApolloProfileManager",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/ClassicOldSong/ApolloProfileManager/releases/download/v0.2.0/manager.zip",
+      "hash": "sha256:77a286dca69e9c198e29bef1a235ace71a740ee12f47b59136a7bae7a4f8d48e"
+    }
+  },
+  "extract_dir": "manager",
+  "bin": "manager.exe",
+  "shortcuts": [
+    [
+      "manager.exe",
+      "Apollo Profile Manager"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/ClassicOldSong/ApolloProfileManager"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/ClassicOldSong/ApolloProfileManager/releases/download/v$version/manager.zip"
+      }
+    }
+  }
+}
