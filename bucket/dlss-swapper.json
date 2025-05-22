@@ -30,6 +30,11 @@
     "  Copy-Item \"$persist_dir\\data\\config.ini\" \"$dir\\config.ini\" -Force",
     "}"
   ],
+  "pre_uninstall": [
+    "if (Test-Path \"$dir\\config.ini\") {",
+    "  Copy-Item \"$dir\\config.ini\" \"$persist_dir\\data\\config.ini\" -Force",
+    "}"
+  ],
   "checkver": {
     "github": "https://github.com/ClassicOldSong/ApolloProfileManager"
   },
