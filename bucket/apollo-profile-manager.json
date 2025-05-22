@@ -17,6 +17,9 @@
       "Apollo Profile Manager"
     ]
   ],
+  "persist": [
+    "config.ini"
+  ],
   "checkver": {
     "github": "https://github.com/ClassicOldSong/ApolloProfileManager"
   },
