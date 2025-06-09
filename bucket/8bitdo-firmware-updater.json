@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "description": "8BitDo Firmware Updater – update firmware for 8BitDo controllers",
+  "homepage": "https://support.8bitdo.com/firmware-updater.html",
+  "license": "unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://download.8bitdo.com/Tools/FirmwareUpdater/8BitDo_Firmware_Updater_Win.zip?00",
+      "hash": "INSERT_SHA256_HERE"
+    }
+  },
+  "extract_dir": "8BitDo_Firmware_Updater_Win",
+  "bin": [
+    "8BitDo Firmware Updater.exe"
+  ],
+  "shortcuts": [
+    [
+      "8BitDo Firmware Updater.exe",
+      "8BitDo Firmware Updater"
+    ]
+  ]
+}
