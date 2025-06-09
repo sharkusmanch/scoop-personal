@@ -5,7 +5,7 @@
   "license": "unknown",
   "architecture": {
     "64bit": {
-      "url": "https://download.8bitdo.com/Tools/FirmwareUpdater/8BitDo_Firmware_Updater_Win.zip?00",
+      "url": "https://download.8bitdo.com/Tools/FirmwareUpdater/8BitDo_Firmware_Updater_Win.zip",
       "hash": "INSERT_SHA256_HERE"
     }
   },
