@@ -1,15 +1,15 @@
 {
-    "version": "1.19",
+    "version": "1.20",
     "description": "8BitDo Ultimate Software V2 – configure keys, macros, firmware, and lighting for 8BitDo devices",
     "homepage": "https://app.8bitdo.com/Ultimate-Software-V2/",
     "license": "unknown",
     "architecture": {
         "64bit": {
-            "url": "https://download.8bitdo.com/Ultimate-Software/8BitDo_Ultimate_Software_V2_Windows_V1.19.zip",
-            "hash": "87f0195fdfe04bb01b1ca0c7611a0a175ddd7b3281e64a7cad676528e14247a2"
+            "url": "https://download.8bitdo.com/Ultimate-Software/8BitDo_Ultimate_Software_V2_Windows_V1.20.zip",
+            "hash": "91dcef7f92790ed2fcc8e5379cb4f0f9fa5f69d971b6d9f26a83ebc6b182a88a"
         }
     },
-    "extract_dir": "8BitDo_Ultimate_Software_V2_V1.19",
+    "extract_dir": "8BitDo_Ultimate_Software_V2_V1.20",
     "bin": "8BitDo Ultimate Software V2.exe",
     "shortcuts": [
         [
