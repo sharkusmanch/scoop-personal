@@ -1,12 +1,12 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Automated Ludusavi game save backup service with scheduling, metrics, and notifications",
     "homepage": "https://github.com/sharkusmanch/ludusavi-runner",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sharkusmanch/ludusavi-runner/releases/download/v1.2.0/ludusavi-runner_1.2.0_windows_amd64.zip",
-            "hash": "ea68739ac0120e9f00a37fdb47b0e17429bd6d1a17b791cdf98337184b067faa"
+            "url": "https://github.com/sharkusmanch/ludusavi-runner/releases/download/v1.2.1/ludusavi-runner_1.2.1_windows_amd64.zip",
+            "hash": "92c1fbf67aadf4bd4f3982d9267d477248869c258310f98eea35cf21abcfd4f2"
         }
     },
     "bin": "ludusavi-runner.exe",
