@@ -1,0 +1,64 @@
+{
+    "version": "1.18.3-stable.5",
+    "description": "Self-hosted game streaming host for Moonlight clients, a fork of Apollo/Sunshine. Installs system-wide via its bundled MSI.",
+    "homepage": "https://github.com/Nonary/Vibepollo",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "Vibepollo is a system-wide install (default: '%ProgramFiles%\\Apollo'), not a portable app.",
+        "install, update and uninstall all require an elevated shell.",
+        "'scoop update vibepollo' runs an in-place MSI major upgrade: config, apps, and paired clients are preserved.",
+        "Web UI: https://localhost:47990"
+    ],
+    "suggest": {
+        "Frame limiter used by Vibepollo's stream frame pacing": "extras/rtss"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nonary/Vibepollo/releases/download/v1.18.3-stable.5/VibepolloSetup-v1.18.3-stable.5.exe#/VibepolloSetup.exe",
+            "hash": "bc2a803e315280ac7caa2c7de2c6dcddb171ba015a51d691aa8d9291b4167862"
+        }
+    },
+    "installer": {
+        "script": [
+            "if (!(is_admin)) { error \"'$app' requires admin rights to $cmd. Re-run scoop from an elevated shell.\"; break }",
+            "# The setup .exe is a bootstrapper around a WiX MSI with a stable UpgradeCode, and the",
+            "# prerelease suffix is encoded into the ProductVersion, so every release is a real major",
+            "# upgrade. Running it over an existing install upgrades in place inside one transaction.",
+            "$succ = Invoke-ExternalCommand \"$dir\\VibepolloSetup.exe\" -ArgumentList @('/qn', '/norestart') -Activity 'Running Vibepollo installer ...' -ContinueExitCodes @{ 3010 = 'A restart is required to finish the Vibepollo upgrade.' }",
+            "if (!$succ) { error 'Vibepollo installer failed.'; break }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if ($cmd -eq 'update') {",
+            "    # 'scoop update' runs the outgoing manifest's uninstaller before installing the new",
+            "    # version. Skip it: the MSI upgrades in place, whereas a real uninstall would tear down",
+            "    # the service, virtual display driver and firewall rules just to put them back.",
+            "    Write-Host 'Skipping uninstall: Vibepollo upgrades in place.' -ForegroundColor Yellow",
+            "} else {",
+            "    if (!(is_admin)) { error \"'$app' requires admin rights to $cmd. Re-run scoop from an elevated shell.\"; break }",
+            "    $entry = Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*', 'HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*' -ErrorAction SilentlyContinue |",
+            "        Where-Object { $_.DisplayName -eq 'Vibepollo' -and $_.UninstallString -like '*uninstall.exe*' } | Select-Object -First 1",
+            "    $uninst = if ($entry) { ($entry.UninstallString -replace '\"', '').Trim() } else { \"$env:ProgramFiles\\Apollo\\uninstall.exe\" }",
+            "    if (Test-Path $uninst) {",
+            "        $succ = Invoke-ExternalCommand $uninst -ArgumentList @('/quiet') -Activity 'Running Vibepollo uninstaller ...' -ContinueExitCodes @{ 3010 = 'A restart is required to finish removing Vibepollo.' }",
+            "        if (!$succ) { error 'Vibepollo uninstaller failed.'; break }",
+            "    } else {",
+            "        warn 'Vibepollo uninstaller not found; nothing to remove.'",
+            "    }",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/Nonary/Vibepollo/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "^v?([\\d.]+(?:-[a-z]+\\.\\d+)?)$"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nonary/Vibepollo/releases/download/v$version/VibepolloSetup-v$version.exe#/VibepolloSetup.exe"
+            }
+        }
+    }
+}
