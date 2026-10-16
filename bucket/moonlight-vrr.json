@@ -1,0 +1,49 @@
+{
+    "version": "6.1.0-vrr18",
+    "description": "Nonary's Moonlight fork with VRR frame pacing and the PyroWave codec, for Vibepollo/Vibeshine hosts.",
+    "homepage": "https://github.com/Nonary/moonlight-qt",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "Runs in portable mode: settings and pairings live in '$persist_dir', separate from stock Moonlight.",
+        "VRR pacing and PyroWave need a Vibepollo or Vibeshine host. Enable V-Sync and VRR in Moonlight's settings.",
+        "PyroWave needs a wired LAN with hundreds of Mbps; select it explicitly as the codec."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nonary/moonlight-qt/releases/download/v6.1.0-vrr18/MoonlightPortable-x64-6.1.0-vrr18.zip",
+            "hash": "900bf4e71bd8e4ff0fc7a01cd7ec08f073adc5da03a28d5968356b5dc72c795b"
+        }
+    },
+    "pre_install": [
+        "# Moonlight only runs portable when portable.dat is in its *working directory*, not next to",
+        "# the exe. Shortcuts start in $dir, but the shim starts in the caller's directory and would",
+        "# fall back to the registry settings stock Moonlight uses. Launch through a wrapper that cds first.",
+        "Rename-Item \"$dir\\portable.dat.inactive\" 'portable.dat'",
+        "Set-Content \"$dir\\moonlight-vrr.cmd\" '@cd /d \"%~dp0\" & start \"\" \"%~dp0Moonlight.exe\" %*' -Encoding Ascii",
+        "if (!(Test-Path \"$persist_dir$($cfg = '\\Moonlight Game Streaming Project')\")) { $null = New-Item -ItemType Directory \"$dir$cfg\" }"
+    ],
+    "bin": [
+        [
+            "moonlight-vrr.cmd",
+            "moonlight-vrr"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Moonlight.exe",
+            "Moonlight VRR"
+        ]
+    ],
+    "persist": "Moonlight Game Streaming Project",
+    "checkver": {
+        "github": "https://github.com/Nonary/moonlight-qt",
+        "regex": "tag/v([\\d.]+-vrr[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nonary/moonlight-qt/releases/download/v$version/MoonlightPortable-x64-$version.zip"
+            }
+        }
+    }
+}
