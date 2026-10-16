@@ -50,9 +50,8 @@
         ]
     },
     "checkver": {
-        "url": "https://api.github.com/repos/Nonary/Vibepollo/releases/latest",
-        "jsonpath": "$.tag_name",
-        "regex": "^v?([\\d.]+(?:-[a-z]+\\.\\d+)?)$"
+        "github": "https://github.com/Nonary/Vibepollo",
+        "regex": "(?:^|/tag/)v?([\\d.]+(?:-[a-z]+\\.\\d+)?)(?:$|\")"
     },
     "autoupdate": {
         "architecture": {
